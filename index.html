@@ -3,45 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>��� ������� ����</title>
+    <title>ККК - Кино, Кофе, Культура</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
+            margin: 20px;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
             text-align: center;
+            margin-bottom: 40px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #e74c3c;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, select {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .hidden {
+            display: none;
         }
         footer {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Авангардное кино</h1>
+        <p>Добро пожаловать.
+            Здесь вы можете подать заявку на роль в одном из них, заполнив форму. 
+            Формы отправляются на email adioshuesos@gmail.com.</p>
+    </header>
 
-<header>
-    <h1>����� ���������� �� ��� ����!</h1>
-</header>
+    <section id="movie1">
+        <h2>1. Восемь шаров</h2>
+        <p>Четыре друга собрались поиграть в бильярд, но вместо шаров у них восемь яиц. 
+            Игра быстро переходит в авангардный сексуальный хаос с элементами бильярда,
+            где кий используется не по назначению, а шары символизируют мужскую силу.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="74d4ddc0-a941-470b-b430-07e3f60d670f">
+            <input type="hidden" name="subject" value="Заявка на роль в фильме: Восемь шаров">
+            <input type="hidden" name="redirect" value="https://elijah.github.io/thanks.html"> <!-- Создайте thanks.html для успеха -->
+            <input type="hidden" name="from_name" value="Сайт Авангардные порно-фильмы">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> <!-- Honeypot для спама -->
+            
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
 
-<main>
-    <h2>��� ��������� ������� ������</h2>
-    <p>��� ������� �������� ������ �� ���� �����. ����� �� ������ �������� ����� ����������, ������� ������.</p>
-    <img src="https://via.placeholder.com/600x400" alt="������ �����������">
-</main>
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender" required onchange="toggleFields(this)">
+                <option value="">Выберите</option>
+                <option value="м">Мужской</option>
+                <option value="ж">Женский</option>
+            </select>
 
-<footer>
-    <p>&copy; 2023 ��� ������� ����</p>
-</footer>
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" name="age" required min="18">
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div id="male-field" class="hidden">
+                <label for="penis_length">Длина члена(в см):</label>
+                <input type="number" id="penis_length" name="penis_length">
+            </div>
+
+            <div id="female-field" class="hidden">
+                <label for="breast_size">Размер сисек (длина в см):</label>
+                <input type="number" id="breast_size" name="breast_size">
+            </div>
+
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </section>
+
+    <section id="movie2">
+        <h2>2. Оплата</h2>
+        <p>В кальянной компания друзей на смрноа оплатить счет, и вместо этого начался хаотичный секс. 
+            В На столе Дима ебет Карину, она лижет анус Владу, который ебет кальянщика. 
+            Нос Карины упирается в анус Влада, а над ней жопа кальянщика. 
+            Тем временем Дима дрочит Илье, которого страпонит Яна. 
+            Авангардный хаос с элементами доминирования и абсурда.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="74d4ddc0-a941-470b-b430-07e3f60d670fY">
+            <input type="hidden" name="subject" value="Заявка на роль в фильме: Оплата">
+            <input type="hidden" name="redirect" value="https://elijah.github.io/thanks.html">
+            <input type="hidden" name="from_name" value="Сайт Авангардные порно-фильмы">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <label for="name2">Имя:</label>
+            <input type="text" id="name2" name="name" required>
+
+            <label for="gender2">Пол:</label>
+            <select id="gender2" name="gender" required onchange="toggleFields(this)">
+                <option value="">Выберите</option>
+                <option value="м">Мужской</option>
+                <option value="ж">Женский</option>
+            </select>
+
+            <label for="age2">Возраст:</label>
+            <input type="number" id="age2" name="age" required min="18">
+
+            <label for="email2">Email:</label>
+            <input type="email" id="email2" name="email" required>
+
+            <div id="male-field2" class="hidden">
+                <label for="penis_length2">Длина члена (в см):</label>
+                <input type="number" id="penis_length2" name="penis_length">
+            </div>
+
+            <div id="female-field2" class="hidden">
+                <label for="breast_size2">Размер сисек (длина в см, для юмора):</label>
+                <input type="number" id="breast_size2" name="breast_size">
+            </div>
+
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </section>
+
+    <section id="movie3">
+        <h2>3. Одинокий рыбак</h2>
+        <p>Фильм рассказывает об одиноком рыбаке на озере, который от одиночества начинает галлюцинировать. 
+            Вместо рыбы он ловит "зеленого слоника" — мифическое существо, которое превращается в сексуальных партнеров. 
+            Рыбак погружается в сюрреалистический мир, где удочка символизирует член, а рыба — желания. 
+            Он "ебет" озеро, лижет анус воображаемому слонику, который в ответ страпонит его, пока нос рыбака упирается в жопу слоника. 
+            В кульминации рыбак дрочит себе, фантазируя о компании друзей-рыбаков, но все заканчивается одинокой оргией с элементами психологического хоррора.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="74d4ddc0-a941-470b-b430-07e3f60d670f">
+            <input type="hidden" name="subject" value="Заявка на роль в фильме: Одинокий рыбак">
+            <input type="hidden" name="redirect" value="https://elijah.github.io/thanks.html">
+            <input type="hidden" name="from_name" value="Сайт Авангардные порно-фильмы">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <label for="name3">Имя:</label>
+            <input type="text" id="name3" name="name" required>
+
+            <label for="gender3">Пол:</label>
+            <select id="gender3" name="gender" required onchange="toggleFields(this)">
+                <option value="">Выберите</option>
+                <option value="м">Мужской</option>
+                <option value="ж">Женский</option>
+            </select>
+
+            <label for="age3">Возраст:</label>
+            <input type="number" id="age3" name="age" required min="18">
+
+            <label for="email3">Email:</label>
+            <input type="email" id="email3" name="email" required>
+
+            <div id="male-field3" class="hidden">
+                <label for="penis_length3">Длина члена (в см):</label>
+                <input type="number" id="penis_length3" name="penis_length">
+            </div>
+
+            <div id="female-field3" class="hidden">
+                <label for="breast_size3">Размер сисек (длина в см, для юмора):</label>
+                <input type="number" id="breast_size3" name="breast_size">
+            </div>
+
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Контакты: +7 999 529 1638 (Ростислав П.)</p>
+    </footer>
+
+    <script>
+        function toggleFields(select) {
+            const form = select.closest('form');
+            const maleField = form.querySelector('[id^="male-field"]');
+            const femaleField = form.querySelector('[id^="female-field"]');
+            
+            maleField.classList.add('hidden');
+            femaleField.classList.add('hidden');
+            
+            if (select.value === 'м') {
+                maleField.classList.remove('hidden');
+            } else if (select.value === 'ж') {
+                femaleField.classList.remove('hidden');
+            }
+        }
+    </script>
 </body>
 </html>
